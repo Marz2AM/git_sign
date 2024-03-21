@@ -30,7 +30,7 @@ class SignInActivity : AppCompatActivity() {
 
             val intent = Intent(this@SignInActivity, HomeActivity::class.java)
 
-            intent.putExtra("id_id", paTh1)
+            intent.putExtra("id_id", paTh1.text.toString())
             startActivity(intent)
 
 
@@ -47,9 +47,6 @@ class SignInActivity : AppCompatActivity() {
     }
 }
 
-private fun Intent.putExtra(s: String, paTh1: EditText?) {
-
-}
 
 
 
