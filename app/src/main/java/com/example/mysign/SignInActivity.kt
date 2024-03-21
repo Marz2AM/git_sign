@@ -26,8 +26,14 @@ class SignInActivity : AppCompatActivity() {
                 Toast.makeText(this,"아이디/비밀번호를 확인해주세요", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
+
             val intent = Intent(this@SignInActivity, HomeActivity::class.java)
+
+            intent.putExtra("id_id", paTh1)
             startActivity(intent)
+
+
         }
 
         signBtn.setOnClickListener {
@@ -40,3 +46,10 @@ class SignInActivity : AppCompatActivity() {
 
     }
 }
+
+private fun Intent.putExtra(s: String, paTh1: EditText?) {
+
+}
+
+
+
